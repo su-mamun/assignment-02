@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.cdnfonts.com/css/miama');
 
 .inter-font{
   font-family: "Inter", sans-serif;
@@ -9,12 +10,28 @@
 
 body{
     background: #111111;
+    margin-left: 190px;
+    margin-right: 140px;
 }
 
 /* shared styles */
 
 .display-flex{
     display: flex;
+}
+.common-p{
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 1rem;
+    font-weight: 400;
+}
+.common-btn{
+    color: rgb(255, 255, 255);
+    font-size: 1rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 42px;
+    background: rgb(230, 83, 60);
+    padding: 12px 24px;
 }
 
 /* navbar styles */
@@ -54,13 +71,80 @@ body{
     background: rgb(230, 83, 60);
     padding: 12px 24px;
 }
-.about-style{
-    padding: 12px 24px;
+
+/* banner styles */
+
+.banner{
+    flex-direction: row;
+    justify-content: space-between;
+}
+.banner-title{
+    color: #FFFFFF;
+    font-size: 4.8rem;
+    font-weight: 900;
+    line-height: 100%;
+    letter-spacing: 0%;
+}
+#shape{
+    font-family: 'Miama', sans-serif;
+    font-size: 8.8rem;
+    font-weight: 400;                                                
+}
+#btn{
+    background: #111111;
+    box-sizing: border-box;
+    border: 1px solid rgb(255, 255, 255);
+    margin: 0px 14px;
+}
+.banner-right{
+    position: relative;
+}
+.banner-right>img{
+    width: 349px;
+    height: 580px;
+    margin-left: 250px;
+}
+#top-right-btn{
+    flex-direction: column;
+    position: absolute;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    backdrop-filter: blur(20px);
+    background: rgba(255, 255, 255, 0.1);
+    padding: 15px 25px;
+    margin-top: -450px;
+    margin-left: 490px;
+}
+#top-right-btn-h{
+    color: rgb(255, 255, 255);;
+    font-size: 2.5rem;
+    font-weight: 900;
+    margin-right: 3.2rem;
+    
+}
+#bottom-left-btn{
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    backdrop-filter: blur(20px);
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px 23px;
+    position: absolute;
+    margin-top: -180px;
+    margin-left: 150px;
+}
+#bottom-left-btn-h{
+    color: rgb(255, 255, 255);;
+    font-size: 1.5rem;
+    font-weight: 900;
+    margin-right: 2rem;
 }
 
 /* media query for small device*/
 
 @media screen and (max-width: 576px) {
+    body{
+        margin: 10px;
+    }
     .navbar{
         width: 100%;
         flex-direction: row;        
@@ -71,6 +155,31 @@ body{
     .menu-bar{
         display: block;
         color: #FFFFFF;
+    }
+    .banner{
+        display: grid;
+        grid-template-rows: repeat(2, 1fr);
+        margin: 0 auto;
+    }
+    .banner-right>img{
+        width: 349px;
+        height: 580px;
+        margin-left: 40px;
+    }
+    #top-right-btn{
+        margin-top: -540px;
+        margin-left: 240px;
+    }
+    #top-right-btn-h{
+        font-size: 1.9rem;
+        margin-right: 1.9rem;
+    }
+    #top-right-btn-h-p{
+        font-size: .7rem;
+    }
+    #bottom-left-btn{
+        margin-top: -330px;
+        margin-left: 10px;
     }
 }
 
