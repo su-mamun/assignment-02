@@ -33,6 +33,12 @@ body{
     background: rgb(230, 83, 60);
     padding: 12px 24px;
 }
+.common-heading{
+    color: rgb(255, 255, 255);
+    font-size: 3rem;
+    font-weight: 900;
+    margin-bottom: 14px;
+}
 
 /* navbar styles */
 
@@ -139,6 +145,37 @@ body{
     margin-right: 2rem;
 }
 
+/* change your habits styles */
+
+.change-your-habits-heading{
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+}
+#change-your-habits-heading-p{
+    width: 671px;
+    height: 48px;
+}
+.change-your-habits-card{
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+.change-your-habits-card>img{
+    border-radius: 50%;
+    border: 1px solid gray;
+}
+.change-your-habits-card>h6{
+    color: rgb(255, 255, 255);
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 6px;
+}
+.change-your-habits-card>p{
+    text-align: center;
+}
+
 /* media query for small device*/
 
 @media screen and (max-width: 576px) {
@@ -181,6 +218,22 @@ body{
         margin-top: -330px;
         margin-left: 10px;
     }
+    .change-your-habits-cards{
+        display: grid;
+        grid-template-rows: 4fr;
+    }
+    .common-heading{
+        font-size: 1.9rem;
+    }
+    #change-your-habits-heading-p{
+        width: 316px;
+        height: 72px;
+    }
+    .change-your-habits-card>p{
+        width: 231px;
+        height: 36px;
+    }
+    
 }
 
 /* media query for large device*/
