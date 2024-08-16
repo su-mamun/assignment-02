@@ -583,7 +583,7 @@ footer{
     }
     .footer-second-part{
         color: white;
-        width: 30%;
+        width: 100%;
     }
     .footer-second-part>h3{
         font-size: 2rem;
@@ -598,7 +598,7 @@ footer{
     }
     .footer-third-part{
         color: white;
-        width: 30%;
+        width: 100%;
     }
     .footer-third-part>h3{
         font-size: 2rem;
