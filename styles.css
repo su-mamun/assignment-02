@@ -125,8 +125,7 @@ body{
     color: rgb(255, 255, 255);;
     font-size: 2.5rem;
     font-weight: 900;
-    margin-right: 3.2rem;
-    
+    margin-right: 3.2rem;    
 }
 #bottom-left-btn{
     border: 1px solid rgba(255, 255, 255, 0.1);
@@ -174,6 +173,33 @@ body{
 }
 .change-your-habits-card>p{
     text-align: center;
+}
+
+/* run an extra mile styles */
+
+.run-an-extra-mile{
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 1060px;
+    height: 371px;
+    border-radius: 1.1rem;
+    background: #222222;  
+    margin: 0 auto;
+    margin-top: 40px; 
+}
+.raem-left{
+    padding: 40px 55px;
+}
+.raem-right{
+    padding: 30px 32px;
+}
+.raem-right>img{
+    width: 366px;
+    height: 312px;
+    border-radius: 18px;
+    object-fit: none;
+    object-position: 68% 30%;
 }
 
 /* media query for small device*/
@@ -233,7 +259,25 @@ body{
         width: 231px;
         height: 36px;
     }
-    
+    .run-an-extra-mile{
+        flex-direction: column;
+        width: 353px;
+        height: 531px;
+        margin: 0 auto;
+        padding-top: 0;
+        gap: 10px;
+    }
+    .raem-left>button{
+        width: 287px;
+        height: 54px;
+    }
+    .raem-right>img{
+        width: 287px;
+        height: 170px;
+        border-radius: 18px;
+        object-fit: cover;
+        margin-top: -60px;
+    }
 }
 
 /* media query for large device*/
