@@ -204,7 +204,7 @@ body{
 
 /* bmi starts here */
 
-/* .bmi{
+.bmi{
     width: 100%;
     margin: 0 auto;
 }
@@ -275,7 +275,7 @@ input{
     color: rgba(255, 255, 255, 0.6);
 }
 #select{
-    width: 100%;
+    width: calc(100% + 15px);
     height: 48px;
     padding: 1rem;
     font-size: 1rem;
@@ -284,7 +284,18 @@ input{
     color: rgba(255, 255, 255, 0.6);
     border: none;
     margin-bottom: 0.8rem;
-} */
+}
+#factor{
+    width: calc(100% + 15px);
+    height: 48px;
+    padding: 1rem;
+    font-size: 1rem;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.1);
+    color: rgba(255, 255, 255, 0.6);
+    border: none;
+    margin-bottom: 0.8rem;
+}
 
 /* meet out team starts here */
 
@@ -491,6 +502,7 @@ footer{
         height: 772px;
         background-color: #222222;
         margin: 0 auto;
+        border-radius: 0.5rem;
     }
     .bmi-calculator-chart{
         width: 100%;
@@ -522,12 +534,13 @@ footer{
         margin-bottom: 14px;
     }
     .input-buttons{ 
-        display: flex;
-        flex-direction: row;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
         padding: 10px;
         margin-bottom: -10px;
     }
     input{
+        width: calc(100% - 15px);
         background: rgba(255, 255, 255, 0.1);
         border-radius: 8px;
         border: none;
@@ -538,6 +551,7 @@ footer{
         margin-bottom: 10px;
     }
     #select{
+        width: 100%;
         padding: 10px;
         font-size: 1rem;
         border-radius: 8px;
@@ -545,6 +559,21 @@ footer{
         color: rgba(255, 255, 255, 0.6);
         border: none;
         margin-bottom: 0.8rem;
+    }
+    #factor{
+        margin-left: 10px;
+        width: calc(100% - 20px);
+        padding: 10px;
+        font-size: 1rem;
+        border-radius: 8px;
+        background: rgba(255, 255, 255, 0.1);
+        color: rgba(255, 255, 255, 0.6);
+        border: none;
+        margin-bottom: 0.8rem;
+    }
+    .calculate-your-bmi>button{
+        margin-left: 10px;
+        margin-bottom: 5px;
     }
     .meet-our-team-img-container{
         width: 353px;
