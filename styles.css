@@ -613,6 +613,7 @@ footer{
     .footer-second-part{
         color: white;
         width: 100%;
+        margin-left: -50px;
     }
     .footer-second-part>h3{
         font-size: 2rem;
@@ -628,6 +629,7 @@ footer{
     .footer-third-part{
         color: white;
         width: 100%;
+        margin-left: -50px;
     }
     .footer-third-part>h3{
         font-size: 2rem;
